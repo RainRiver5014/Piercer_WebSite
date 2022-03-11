@@ -5,17 +5,28 @@ const DashboardStyle = styled.div`
       .dashboardHerosect {
          position: relative;
          .bgHero {
-            img {
-               width: 100%;
-               max-height: 810px;
-            }
+       
             video {
                width: 100%;
-               max-height: 720px;
+               max-height: 1220px;
                background-size:cover;
                background-repeat:no-repeat;
             }
+            
          }
+         @media only screen and (max-width:100px) {
+            .bgHero {
+              width: 80%;
+              padding: 0;
+            }
+          }
+          @media only screen and (max-height:100px) {
+            .bgHero {
+              height: 80%;
+              padding: 0;
+            }
+          }
+
          .remainImg {
             position: absolute;
             top: 80px;
@@ -80,23 +91,32 @@ const DashboardStyle = styled.div`
                }
                .paymentMethod {
                   position: absolute;
-                  top: 20%;
+                  top: 30%;
                   left: 50%;
                   transform: translateX(-50%);
                   display: flex;
+                  
                   .button{
-                     display: inline-block;
-                     padding: 18px 64px;
-                     margin:18px;
-                     max-width:180px;
-                     font-size: 14px;
-                     cursor: pointer;
-                     text-align: center;
-                     outline: none;
-                     color: black;
-                     background-color:white;
-                     border: none;
-                     border-radius: 45px;
+                  display: block;
+                  float: left;
+                  width: 225px;
+                  height: 60px;
+                  text-align: center;
+                  line-height: 3.85;
+                  font-weight:bold;
+                  border: 3px solid white;
+                  font-family: "Open Sans", sans-serif;
+                  border-radius: 50px;
+                  color: black;
+                  background: white;
+                  box-shadow: 0px 0px 15px rgb(0 0 0 / 25%);
+                  margin-left: 10px;
+                  margin-right: 10px;
+                  margin-right: 10px;
+                  margin-bottom: 20px;
+                  transition: 0.3s all;
+                  cursor: pointer;
+
                   }
                }
             }

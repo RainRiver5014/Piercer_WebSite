@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import { Box, Typography, Grid, Button} from "@mui/material";
 
 
+
 import backgroundVideo from "../../Assets/Videos/videofile.mp4";
 
 
@@ -27,14 +28,11 @@ const Dashboard = () => {
                <Box className="playSectMain">
                   <Box className="appstoreSect">
                      {/* <img src={bgPlay} alt="bgPlay" className="bgPlay" /> */}
+                     
                      <div className="paymentMethod">
                         <a href="https://discord.com/invite/versa">
-                           <button className="button">Discord</button>
+                           <button className="button">DISCORD</button>
                         </a>
-                        <a href="https://t.me/RBXFlip">
-                          <button className="button">Piercer</button>
-                        </a>
-                     
                      </div>
                   </Box>
                </Box>
